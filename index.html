@@ -28,31 +28,36 @@
             <li>All samples are provided for demonstration purposes.</li>
             <li>For the best experience, use headphones or high-quality speakers.</li>
         </ul>
-    </div>
-
-    <hr>
-
-    <div id='section-1' class='section'>
+    <!-- Section for a category of audio samples -->
+    <div class='section' id='section-1'>
         <h2>Section 1: Sample Category</h2>
-        <p>Description of the samples in this category.</p>
         
-        <!-- Sample Playback Section -->
-        <h3>Samples</h3>
-        <div class='playlist'>
-            <!-- Audio Sample -->
-            <div class='labeled-audio'>
-                <audio preload='metadata' controls>
-                    <source src='path/to/sample.mp3' type='audio/mpeg'>
-                </audio>
+        <!-- Row for a single audio sample -->
+        <div class='sample-row'>
+            <!-- Description -->
+            <div class='sample-desc'>
+                <p>Pop dance track with catchy melodies, tropical percussion, and upbeat rhythms, perfect for the beach.</p>
             </div>
-            <!-- Add more audio samples as needed -->
+            
+            <!-- Audio Players for Different Models -->
+            <audio controls>
+                <source src='path/to/musicgen_sample.mp3' type='audio/mpeg'>
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src='path/to/musicgenstereo_sample.mp3' type='audio/mpeg'>
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Add more audio players as needed -->
         </div>
+        
+        <!-- Add more sample rows as needed -->
     </div>
 
     <!-- Add more sections as needed -->
-
+    
     <script>
-        // Add any JavaScript functionality needed for interactive features
+        // Your existing JavaScript or new scripts
     </script>
 
 </body>
