@@ -1,5 +1,6 @@
 import os
 import torchaudio
+import torch
 from glob import glob
 
 def normalize_audio_by_peak(audio_path):
@@ -10,6 +11,9 @@ def normalize_audio_by_peak(audio_path):
     peak = waveform.abs().max()
     if peak > 0:
         waveform = waveform / peak
+        
+    # pad the waveform to have the same length (sr * 4)
+    waveform = torch.nn.functional.pad(waveform, (0, sample_rate * 4 - waveform.size(1)), 'constant', 0)
     
     # Save the normalized waveform to the original file
     torchaudio.save(audio_path, waveform, sample_rate)
