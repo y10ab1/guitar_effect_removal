@@ -103,9 +103,9 @@ p {
 
 .section {
     margin-bottom: 100px;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    max-width: 660px;
+    /* max-width: 800; */
 }
 
 .toc > li {
@@ -162,48 +162,17 @@ p {
     margin-top: 30px;
 }
 
-
-/* Additional styles for clean layout */
-
-/* Container for each section or audio sample */
-.section {
-  background-color: #fff;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 16px;
-  margin-bottom: 16px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
-
-/* Flex container for each audio sample row */
-.sample-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8px;
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+    max-width: 50px;
 }
-
-/* Description of audio sample */
-.sample-desc {
-  flex-grow: 1;
-  margin-right: 16px;
+th {
+    background-color: #f2f2f2;
 }
-
-/* Custom audio player styling */
-audio {
-  width: 100%; /* To ensure audio player takes full width of its container */
-  max-width: 180px; /* Set a max-width for larger screens */
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  .sample-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  audio {
-    max-width: none;
-    width: auto; /* Allows the audio player to be responsive */
-  }
-}
-

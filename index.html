@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
 
     <div class='section'>
-        <h1>Guitar Effect Removal</h1>
+        <h1>Audio Sample Showcase</h1>
         <p>Explore a variety of audio samples across different categories and genres.</p>
 
         <h4>Contents:</h4>
@@ -28,46 +29,64 @@
             <li>All samples are provided for demonstration purposes.</li>
             <li>For the best experience, use headphones or high-quality speakers.</li>
         </ul>
-        
-    <!-- Section for a category of audio samples -->
-    <div class='section' id='section-1'>
+    </div>
+
+    <hr>
+
+    <div id='section-1' class='section'>
         <h2>Section 1: Sample Category</h2>
+        <p>Description of the samples in this category.</p>
         
-        <!-- Row for a single audio sample -->
-        <div class='sample-row'>
-            <!-- Description -->
-            <div class='sample-desc'>
-                <p>Sample 1.</p>
+        <!-- Sample Playback Section -->
+        <h3>Samples</h3>
+        <div class='playlist'>
+            <!-- Audio Sample -->
+            <div class='labeled-audio'>
+                <audio preload='metadata' controls>
+                    <source src='path/to/sample.mp3' type='audio/mpeg'>
+                </audio>
             </div>
-            
-            <!-- Audio Players for Different Models -->
-            <audio controls>
-                <source src='path/to/musicgen_sample.mp3' type='audio/mpeg'>
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src='path/to/musicgenstereo_sample.mp3' type='audio/mpeg'>
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src='path/to/musicgenstereo_sample.mp3' type='audio/mpeg'>
-                Your browser does not support the audio element.
-            </audio>
-            <audio controls>
-                <source src='path/to/musicgenstereo_sample.mp3' type='audio/mpeg'>
-                Your browser does not support the audio element.
-            </audio>
-            <!-- Add more audio players as needed -->
+            <!-- Add more audio samples as needed -->
         </div>
+    </div>
+
+    <div id='section-2' class='section'>
+        <h2>Section 2: Sample Category</h2>
+        <p>Description of the samples in this category.</p>
         
-        <!-- Add more sample rows as needed -->
+        <!-- Sample Playback Section -->
+        <h3>Samples</h3>
+        <table>
+            <tr>
+                <!-- <th></th> -->
+                <th>Wet</th>
+                <th>Dey</th>
+                <th>Ours</th>
+                <th>HifiGAN denoiser</th>
+                <th>Demucs V3</th>
+                <th>DCUnet</th>
+            </tr>
+            <tr>
+                <!-- <td>Sample 1</td> -->
+                <td><audio controls><source src="path_to_audio_file.mp3" type="audio/mpeg"></audio></td>
+                <td><audio controls><source src="path_to_audio_file.mp3" type="audio/mpeg"></audio></td>
+                <td><audio controls><source src="path_to_audio_file.mp3" type="audio/mpeg"></audio></td>
+                <td><audio controls><source src="path_to_audio_file.mp3" type="audio/mpeg"></audio></td>
+                <td><audio controls><source src="path_to_audio_file.mp3" type="audio/mpeg"></audio></td>
+                <td><audio controls><source src="path_to_audio_file.mp3" type="audio/mpeg"></audio></td>
+            </tr>
+            <!-- Repeat <tr>...</tr> blocks for each row in your table -->
+        </table>    
     </div>
 
     <!-- Add more sections as needed -->
-    
+
     <script>
-        // Your existing JavaScript or new scripts
+        // Add any JavaScript functionality needed for interactive features
     </script>
+
+
+
 
 </body>
 </html>
