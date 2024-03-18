@@ -25,12 +25,3 @@ for filename in glob('**/*.wav', recursive=True):
     normalize_audio_by_peak(filename)
     print(f'Normalized and saved: {filename}')
 
-# # Define the directory containing audio samples
-# audio_dir = 
-
-# # Iterate over the files in the directory
-# for filename in os.listdir(audio_dir):
-#     if filename.endswith('.wav'):  # Change this to the appropriate file extension
-#         file_path = os.path.join(audio_dir, filename)
-#         normalize_audio_by_peak(file_path)
-#         print(f'Normalized and saved: {file_path}')
