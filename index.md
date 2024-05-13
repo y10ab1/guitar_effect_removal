@@ -2,6 +2,12 @@
 layout: default
 ---
 
+Dis
+## Abstract
+Removing audio effects from electric guitar tracks significantly increases the flexibility in post-production, providing a more adaptable environment for sound editing. An audio distortion recovery model not only improves the guitar's clarity but also opens up new opportunities for creative adjustments in mixing and mastering. Previous efforts to tackle this challenge have largely focused on synthetic distortions that are too simplistic to accurately capture the complexities encountered in real-world situations. Moreover, the performance of existing methods leave room for improvement.
+
+In this paper we introduces a novel two-stage methodology to efficiently eliminate audio effects from electric guitar tracks, initially purifying the audio signal in the Mel-spectrogram domain, and subsequently employing a neural vocoder to reconstruct the pristine original guitar sound from the processed Mel-spectrogram. Our evaluation utilizes a comprehensive combination of VST plugins to assess the effectiveness of our proposed methodology. Experimental results demonstrate that our approach outperforms existing ones, exhibiting superior performance through both subjective and objective metrics.
+
 ## Contents:
 - [Section 1: Comparison of different models](#section-1)
 
