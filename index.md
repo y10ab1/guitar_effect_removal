@@ -1,6 +1,6 @@
-# Distortion Recovery: A Two-Stage Method for Guitar Effect Removal
-
-Listen to the samples below to compare the results of different guitar effect removal models.
+---
+layout: default
+---
 
 ## Contents:
 - [Section 1: Comparison of different models](#section-1)
@@ -35,4 +35,3 @@ Description of the samples.
 | {% include audio_player.html style='width:240px;' filename='samples/wet/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/dry/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/mel2mel_hifigan_finetune/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/hifigan-denoiser/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/Demucs_pred/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/DCUNet_pred/632f4bd7ec54540015a63a0a-aug_37.wav'%} |
 | {% include audio_player.html style='width:240px;' filename='samples/wet/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/dry/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/mel2mel_hifigan_finetune/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/hifigan-denoiser/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/Demucs_pred/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:240px;' filename='samples/DCUNet_pred/6320a140fa5221001594f064-aug_24.wav'%} |
 
-Note: Add more rows as needed for your samples.
