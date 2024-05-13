@@ -1,8 +1,3 @@
----
-layout: post
-title: Guitar effect removal
----
-
 # Distortion Recovery: A Two-Stage Method for Guitar Effect Removal
 
 Listen to the samples below to compare the results of different guitar effect removal models.
