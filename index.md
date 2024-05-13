@@ -20,10 +20,6 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 
 ## Section 1: Comparison of different models
 
-Description of the samples.
-
-### Samples
-
 | Wet | Dry | Ours | HifiGAN denoiser | Demucs V3 | DCUnet |
 |-----|-----|------|------------------|-----------|--------|
 | {% include audio_player.html style='width:100px;' filename='samples/wet/632f4bd7ec54540015a63a0a-aug_57.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/dry/632f4bd7ec54540015a63a0a-aug_57.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/mel2mel_hifigan_finetune/632f4bd7ec54540015a63a0a-aug_57.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/hifigan-denoiser/632f4bd7ec54540015a63a0a-aug_57.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/Demucs_pred/632f4bd7ec54540015a63a0a-aug_57.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/DCUNet_pred/632f4bd7ec54540015a63a0a-aug_57.wav'%} |
