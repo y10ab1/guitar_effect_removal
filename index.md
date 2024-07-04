@@ -40,6 +40,8 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 | {% include audio_player.html style='width:100px;' filename='samples/wet/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/dry/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/mel2mel_hifigan_finetune/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/hifigan-denoiser/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/Demucs_pred/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/DCUNet_pred/6320a140fa5221001594f064-aug_24.wav'%} |
 
 ## Additional experiments on EGDB
+We randomly render dry guitar tracks from the [EGDB dataset](https://ss12f32v.github.io/Guitar-Transcription/) with BIAS FX2 and fine-tune the model on the rendered dataset. We compare our model with Demucs V3.
+The rendered dataset can be found [here](https://zenodo.org/uploads/12658984?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjlmOWU3YzJkLWQ0YzQtNDEwOC04YWM0LTY0OTZjZTc1NTgyMSIsImRhdGEiOnt9LCJyYW5kb20iOiJjOTcyMzE1ZjBlNjk2MGIzYjViMzU0YzQ3ODJkMmYzMCJ9.CzL6tv4e4I7Zd_5RjsDP4EOejJr0Yi0QHYKcAww2UbGQ20Fh4ArRx-uh7G-StWQiXPlCeA1z7ouJi-edCdo2rQ).
 
 ### Objective evaluation metrics
 
