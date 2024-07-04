@@ -10,7 +10,7 @@ Removing audio effects from electric guitar tracks significantly increases the f
 In this paper we introduces a novel two-stage methodology to efficiently eliminate audio effects from electric guitar tracks, initially purifying the audio signal in the Mel-spectrogram domain, and subsequently employing a neural vocoder to reconstruct the pristine original guitar sound from the processed Mel-spectrogram. Our evaluation utilizes a comprehensive combination of VST plugins to assess the effectiveness of our proposed methodology. Experimental results demonstrate that our approach outperforms existing ones, exhibiting superior performance through both subjective and objective metrics.
 
 # Contents:
-- [Section 1: Comparison of different models](#section-1)
+- [Comparison of different models](#section-1)
 
 ## Notes:
 - All samples are provided for demonstration purposes.
@@ -18,7 +18,7 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 
 ---
 
-## Section 1: Comparison of different models
+## Comparison of different models
 
 | Wet | Dry | Ours | HifiGAN denoiser | Demucs V3 | DCUnet |
 |-----|-----|------|------------------|-----------|--------|
@@ -38,3 +38,12 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 | {% include audio_player.html style='width:100px;' filename='samples/wet/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/dry/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/mel2mel_hifigan_finetune/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/hifigan-denoiser/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/Demucs_pred/632f4bd7ec54540015a63a0a-aug_37.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/DCUNet_pred/632f4bd7ec54540015a63a0a-aug_37.wav'%} |
 | {% include audio_player.html style='width:100px;' filename='samples/wet/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/dry/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/mel2mel_hifigan_finetune/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/hifigan-denoiser/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/Demucs_pred/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/DCUNet_pred/6320a140fa5221001594f064-aug_24.wav'%} |
 
+## Additional experiments on EGDB
+
+      | FAD ↓ ESR ↓ SISDR ↑ MR-STFT ↓|
+      |-------------------------------|
+Demucs V3 | 0.545 | 1.033 | 6.478 | 1.960 |
+Ours | 0.270 | 1.574 | 30.242 | 1.504 |
+
+| Wet | Dry | Ours | Demucs V3 |
+|-----|-----|------|-----------|
