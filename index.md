@@ -42,10 +42,14 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 ## Additional experiments on EGDB
 
 ### Metrics
+
 | Model | FAD ↓ | ESR ↓ | SISDR ↑ | MR-STFT ↓ |
 |-------|-------|-------|---------|-----------|
 | Demucs V3 | 0.545 | 1.033 | 6.478 | 1.960 |
 | Ours | 0.270 | 1.574 | 30.242 | 1.504 |
+
 ### Audio samples
+
 | Wet | Dry | Ours | Demucs V3 |
 |-----|-----|------|-----------|
+| {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_wet/8.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_dry/8.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Fastspeech_pred/8.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Demucs_pred/8.wav'%} |
