@@ -40,6 +40,7 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 | {% include audio_player.html style='width:100px;' filename='samples/wet/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/dry/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/mel2mel_hifigan_finetune/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/hifigan-denoiser/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/Demucs_pred/6320a140fa5221001594f064-aug_24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/DCUNet_pred/6320a140fa5221001594f064-aug_24.wav'%} |
 
 ## Additional experiments on EGDB
+
 ### Metrics
 | Model | FAD ↓ | ESR ↓ | SISDR ↑ | MR-STFT ↓ |
 |-------|-------|-------|---------|-----------|
