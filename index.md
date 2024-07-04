@@ -41,7 +41,7 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 
 ## Additional experiments on EGDB
 
-### Metrics
+### Objective evaluation metrics
 
 | Model | FAD ↓ | ESR ↓ | SISDR ↑ | MR-STFT ↓ |
 |-------|-------|-------|---------|-----------|
