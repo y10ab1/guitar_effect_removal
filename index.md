@@ -61,22 +61,3 @@ The rendered dataset is available [here](https://zenodo.org/uploads/12658984?tok
 | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_wet/61.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_dry/61.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Fastspeech_pred/61.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Demucs_pred/61.wav'%} |
 
 
-<script>
-    // Function to stop all other audio players
-    function stopOtherAudios(currentAudio) {
-        const audios = document.querySelectorAll('.audio-player');
-        audios.forEach(audio => {
-            if (audio !== currentAudio) {
-                audio.pause();
-                audio.currentTime = 0;
-            }
-        });
-    }
-
-    // Add event listener to all audio players
-    document.querySelectorAll('.audio-player').forEach(audio => {
-        audio.addEventListener('play', function() {
-            stopOtherAudios(audio);
-        });
-    });
-</script>
