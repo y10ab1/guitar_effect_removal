@@ -2,7 +2,7 @@
 layout: default
 ---
 
-We provide listening examples of our paper "Distortion Recovery: A Two-Stage Method for Guitar Effect Removal".
+We provide listening examples of our paper “Distortion Recovery: A Two-Stage Method for Guitar Effect Removal”, published at DAFx 2024.
 
 # Abstract
 Removing audio effects from electric guitar tracks significantly increases the flexibility in post-production, providing a more adaptable environment for sound editing. An audio distortion recovery model not only improves the guitar's clarity but also opens up new opportunities for creative adjustments in mixing and mastering. Previous efforts to tackle this challenge have largely focused on synthetic distortions that are too simplistic to accurately capture the complexities encountered in real-world situations. Moreover, the performance of existing methods leave room for improvement.
@@ -59,3 +59,24 @@ The rendered dataset is available [here](https://zenodo.org/uploads/12658984?tok
 | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_wet/24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_dry/24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Fastspeech_pred/24.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Demucs_pred/24.wav'%} |
 | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_wet/1.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_dry/1.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Fastspeech_pred/1.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Demucs_pred/1.wav'%} |
 | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_wet/61.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_dry/61.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Fastspeech_pred/61.wav'%} | {% include audio_player.html style='width:100px;' filename='samples/output_EGDB_ft2/tmp_Demucs_pred/61.wav'%} |
+
+
+<script>
+    // Function to stop all other audio players
+    function stopOtherAudios(currentAudio) {
+        const audios = document.querySelectorAll('.audio-player');
+        audios.forEach(audio => {
+            if (audio !== currentAudio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+    }
+
+    // Add event listener to all audio players
+    document.querySelectorAll('.audio-player').forEach(audio => {
+        audio.addEventListener('play', function() {
+            stopOtherAudios(audio);
+        });
+    });
+</script>
