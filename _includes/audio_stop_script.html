@@ -1,0 +1,19 @@
+<script>
+    // Function to stop all other audio players
+    function stopOtherAudios(currentAudio) {
+        const audios = document.querySelectorAll('.audio-player');
+        audios.forEach(audio => {
+            if (audio !== currentAudio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+    }
+
+    // Add event listener to all audio players
+    document.querySelectorAll('.audio-player').forEach(audio => {
+        audio.addEventListener('play', function() {
+            stopOtherAudios(audio);
+        });
+    });
+</script>
