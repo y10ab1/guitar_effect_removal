@@ -48,8 +48,8 @@ The EGDB dataset consists of 240 tracks (~1.5 hours) and was randomly split by t
 
 | Model | FAD ↓ | ESR ↓ | SISDR ↑ | MR-STFT ↓ |
 |-------|-------|-------|---------|-----------|
-| Demucs V3 | 0.545 | 1.033 | 6.478 | 1.960 |
-| Ours | 0.270 | 1.574 | 30.242 | 1.504 |
+| Demucs V3 | 0.545 | 1.033 | 6.478 | 1.931 |
+| Ours | 0.270 | 1.574 | 30.241 | 1.493 |
 
 ### Audio samples
 
