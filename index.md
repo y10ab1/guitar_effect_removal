@@ -11,7 +11,7 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 
 # Contents:
 - [Comparison of different models](#comparison-of-different-models)
-- [Additional experiments on EGDB](#additional-experiments-on-EGDB)
+- [Additional experiments on EGDB](#additional-experiments-on-egdb)
 
 ## Notes:
 - All samples are provided for demonstration purposes.
