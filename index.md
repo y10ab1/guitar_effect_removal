@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<iframe width="420" height="315" src="DAFx2024.mp4" frameborder="0" allowfullscreen></iframe>
+
 We provide listening examples of our paper “Distortion Recovery: A Two-Stage Method for Guitar Effect Removal”, published at DAFx 2024.
 
 # Abstract
