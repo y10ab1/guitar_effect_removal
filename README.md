@@ -10,11 +10,15 @@ To install pytorch, run the following command:
 pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-To install the required packages, run the following command:
+To install the other required packages, run the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+## Data
+
+To evaluate the additional experiments on the EGDB dataset, download the dry siganl and recovered results from this [Google Drive](https://drive.google.com/drive/folders/1_NOPoomWlIWAks_41EpMvWx7sboGJF4I?usp=drive_link).
 
 ## Usage
 
