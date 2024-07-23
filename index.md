@@ -10,8 +10,8 @@ Removing audio effects from electric guitar tracks significantly increases the f
 In this paper we introduces a novel two-stage methodology to efficiently eliminate audio effects from electric guitar tracks, initially purifying the audio signal in the Mel-spectrogram domain, and subsequently employing a neural vocoder to reconstruct the pristine original guitar sound from the processed Mel-spectrogram. Our evaluation utilizes a comprehensive combination of VST plugins to assess the effectiveness of our proposed methodology. Experimental results demonstrate that our approach outperforms existing ones, exhibiting superior performance through both subjective and objective metrics.
 
 # Contents:
-- [Comparison of different models](#section-1)
-- [Additional experiments on EGDB](#section-2)
+- [Comparison of different models](#Comparison of different models)
+- [Additional experiments on EGDB](#Additional experiments on EGDB)
 
 ## Notes:
 - All samples are provided for demonstration purposes.
