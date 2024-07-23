@@ -42,7 +42,10 @@ In this paper we introduces a novel two-stage methodology to efficiently elimina
 ## Additional experiments on EGDB
 We randomly rendered dry (direct input) guitar tracks from the [EGDB dataset](https://ss12f32v.github.io/Guitar-Transcription/) using BIAS FX2 and fine-tuned both our model and Demucs V3 on this [rendered dataset](https://zenodo.org/uploads/12658984?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjlmOWU3YzJkLWQ0YzQtNDEwOC04YWM0LTY0OTZjZTc1NTgyMSIsImRhdGEiOnt9LCJyYW5kb20iOiJjOTcyMzE1ZjBlNjk2MGIzYjViMzU0YzQ3ODJkMmYzMCJ9.CzL6tv4e4I7Zd_5RjsDP4EOejJr0Yi0QHYKcAww2UbGQ20Fh4ArRx-uh7G-StWQiXPlCeA1z7ouJi-edCdo2rQ).
 
-The EGDB dataset consists of 240 tracks (~1.5 hours) and was randomly split by tracks into training, validation, and test sets, following an 8/1/1 split. Our model was then compared with Demucs V3. During both the training and testing phases, each track was randomly segmented into 4-second clips. The segmented clips for testing, including wet/dry signal, results of our model and Demucs V3, are available [here](https://drive.google.com/drive/folders/1_NOPoomWlIWAks_41EpMvWx7sboGJF4I?usp=drive_link). The test code for following the evaluation metrics is available at this [GitHub repository](https://github.com/y10ab1/guitar_effect_removal).
+The EGDB dataset consists of 240 tracks (~1.5 hours) and was randomly split by tracks into training, validation, and test sets, following an 8/1/1 split. Our model was then compared with Demucs V3. During both the training and testing phases, each track was randomly segmented into 4-second clips. 
+
+The segmented clips for testing, including wet/dry signal, results of our model and Demucs V3, are available [here](https://drive.google.com/drive/folders/1_NOPoomWlIWAks_41EpMvWx7sboGJF4I?usp=drive_link). 
+The test code for following the evaluation metrics is available at this [GitHub repository](https://github.com/y10ab1/guitar_effect_removal).
 
 ### Objective evaluation metrics
 
