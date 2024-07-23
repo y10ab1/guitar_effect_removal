@@ -1,3 +1,0 @@
-auraloss
-lightning
-numpy
