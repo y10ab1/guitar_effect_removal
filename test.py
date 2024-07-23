@@ -9,6 +9,7 @@ from auraloss.freq import MultiResolutionSTFTLoss
 from frechet_audio_distance import FrechetAudioDistance
 
 from collections import defaultdict
+from argparse import ArgumentParser
 
 class TestModel():
     def __init__(self, sample_rate=44100, **kwargs) -> None:
@@ -53,6 +54,12 @@ class TestModel():
         print(f"Average SISDR: {round(avg_sisdr, 3)}")
         print(f"Average ESR: {round(avg_esr, 3)}")
         print(f"Average MRSTFT: {round(avg_mrstft, 3)}")
+        
+def parse_args():
+    parser = ArgumentParser()
+    parser.add_argument("--dry_folder", "-d", type=str, required=True, help="Path to dry folder. For example: /home/user/dry")
+    parser.add_argument("--recovered_folder", "-r", type=str, required=True, help="Path to recovered folder. For example: /home/user/recovered")
+    return parser.parse_args()
 
 if __name__ == '__main__':
     l.pytorch.seed_everything(42)
@@ -64,10 +71,15 @@ if __name__ == '__main__':
         verbose=False,
         enable_fusion=False,            # for CLAP only
     )
+    
+    args = parse_args()
+    
     print("----------Testing----------")
-    dry_folder = '/home/yuehpo/coding/gremfx/output_EGDB_ft2/tmp_dry'
-    recovered_folder = '/home/yuehpo/coding/gremfx/output_EGDB_ft2/tmp_Fastspeech_pred'
-    recovered_folder = '/home/yuehpo/coding/gremfx/output_EGDB_ft2/tmp_Demucs_pred'
+    # dry_folder = '/home/yuehpo/coding/gremfx/output_EGDB_ft2/tmp_dry'
+    # recovered_folder = '/home/yuehpo/coding/gremfx/output_EGDB_ft2/tmp_Fastspeech_pred'
+    # recovered_folder = '/home/yuehpo/coding/gremfx/output_EGDB_ft2/tmp_Demucs_pred'
+    dry_folder = args.dry_folder
+    recovered_folder = args.recovered_folder
     model.test_model(dry_folder, recovered_folder)
     
 
