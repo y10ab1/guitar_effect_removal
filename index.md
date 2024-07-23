@@ -45,7 +45,7 @@ We randomly rendered dry (direct input) guitar tracks from the [EGDB dataset](ht
 The EGDB dataset consists of 240 tracks (~1.5 hours) and was randomly split by tracks into training, validation, and test sets, following an 8/1/1 split. Our model was then compared with Demucs V3. During both the training and testing phases, each track was randomly segmented into 4-second clips. 
 
 The segmented clips for testing, including wet/dry signal, results of our model and Demucs V3, are available [here](https://drive.google.com/drive/folders/1_NOPoomWlIWAks_41EpMvWx7sboGJF4I?usp=drive_link). 
-The test code for following the evaluation metrics is available at this [GitHub repository](https://github.com/y10ab1/guitar_effect_removal).
+The test code for evaluating the following metrics is available at this [GitHub repository](https://github.com/y10ab1/guitar_effect_removal).
 
 ### Objective evaluation metrics
 
