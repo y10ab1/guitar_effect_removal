@@ -1,8 +1,6 @@
 # Guitar Effect Removal Evaluation
 
-This work is based on our paper titled **"Distortion Recovery: A Two-Stage Method for Guitar Effect Removal"**, published at DAFx 2024. The paper presents a novel two-stage method to recover clean guitar signals from distorted wet guitar signals. This research was conducted in collaboration with Positive Grid.
-
-The paper is available on arXiv: [https://arxiv.org/abs/2407.16639](https://arxiv.org/abs/2407.16639).
+This work is based on our paper titled **"Distortion Recovery: A Two-Stage Method for Guitar Effect Removal"**, published at DAFx 2024. The paper presents a novel two-stage method to recover clean guitar signals from distorted wet guitar signals. This research was conducted in collaboration with Positive Grid. Paper is now available on arXiv: [https://arxiv.org/abs/2407.16639](https://arxiv.org/abs/2407.16639).
 
 This repository contains code for evaluating the recovery of clean guitar tones from wet guitar tones using various metrics. The script calculates metrics such as SISDR, ESR, and MRSTFTLoss, and also computes the Frechet Audio Distance (FAD) score.
 
