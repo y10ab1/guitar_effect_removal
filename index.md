@@ -2,8 +2,28 @@
 layout: default
 ---
 
-<div style="text-align: center;">
-  <iframe width="768" height="432" src="DAFx2024.mp4" frameborder="0" allowfullscreen></iframe>
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div class="video-container">
+  <iframe src="DAFx2024.mp4" frameborder="0" allowfullscreen></iframe>
 </div>
 
 We provide listening examples of our paper “Distortion Recovery: A Two-Stage Method for Guitar Effect Removal”, published at DAFx 2024.
