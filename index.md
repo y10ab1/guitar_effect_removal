@@ -26,7 +26,7 @@ layout: default
   <iframe src="DAFx2024.mp4" frameborder="0" allowfullscreen></iframe>
 </div>
 
-We provide listening examples of our paper “Distortion Recovery: A Two-Stage Method for Guitar Effect Removal”, published at DAFx 2024.
+We provide listening examples of our paper “[Distortion Recovery: A Two-Stage Method for Guitar Effect Removal](https://arxiv.org/abs/2407.16639)”, published at DAFx 2024.
 
 # Abstract
 Removing audio effects from electric guitar tracks significantly increases the flexibility in post-production, providing a more adaptable environment for sound editing. An audio distortion recovery model not only improves the guitar's clarity but also opens up new opportunities for creative adjustments in mixing and mastering. Previous efforts to tackle this challenge have largely focused on synthetic distortions that are too simplistic to accurately capture the complexities encountered in real-world situations. Moreover, the performance of existing methods leave room for improvement.
